@@ -1,7 +1,7 @@
 pipeline
 {
     agent {
-    label ' JavaApps '
+    label ' JavaApp '
     }
     tools {
         maven 'maven3.8.1'
