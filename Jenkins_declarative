@@ -1,9 +1,12 @@
 pipeline
 {
-    agent any
+    agent {
+    label ' Jenkins_Node1 '
+    }
     tools {
         maven 'maven3.8.1'
     }
+    
    
     options{
         buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '3', numToKeepStr: '3'))
