@@ -9,10 +9,10 @@ services:
     - mavenappbridge
   mongodb:
     image: mongo
-    volume:
+    volumes:
     - Backup:/data/db
 networks:
   mavenappbridge:
-volume:
-  Backup
+volumes:
+  Backup:
     
